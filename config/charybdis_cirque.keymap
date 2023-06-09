@@ -141,9 +141,9 @@ modcp: mod_copy {
        default_layer {
             label = "DEFAULT";
            bindings = <
-   &lt 2 KP_N7 &kp KP_N8 &kp KP_N9 &kp GRAVE AS(N1) AS(N2) AS(N3) AS(N4) AS(N5) &kp LGUI   AS(EQUAL)AS(N6) AS(N7) AS(N8)  AS(N9) AS(N0) &kp MINUS &kp F10  &kp F11   &lt 2 F12 
+   &lt 2 KP_N7 &kp KP_N8 &kp KP_N9 &kp GRAVE AS(N1) AS(N2) AS(N3) AS(N4) AS(N5) &kp LGUI  AS(FSLH) AS(N6) AS(N7) AS(N8)  AS(N9) AS(N0) &kp MINUS &kp F10  &kp F11   &lt 2 F12 
    &kp KP_N4 &kp KP_N5 &kp KP_N6  &lt 3 TAB  AS(Q) AS(W) AS(E) AS(R) AS(T)                      AS(Y) AS(U) AS(I) AS(O) AS(P) AS(BSLH) &kp F7 &kp F8  &kp F9
-   &kp KP_N1 &kp KP_N2 &kp KP_N3 &kp ESC  AS(A) AS(S) AS(D) AS(F) AS(G) &kp ENTER     AS(FSLH) AS(H)  AS(J) AS(K) AS(L) AS(SEMI) AS(SQT) &kp F4 &kp F5 &kp F6
+   &kp KP_N1 &kp KP_N2 &kp KP_N3 &kp ESC  AS(A) AS(S) AS(D) AS(F) AS(G) &kp ENTER    AS(EQUAL)  AS(H)  AS(J) AS(K) AS(L) AS(SEMI) AS(SQT) &kp F4 &kp F5 &kp F6
    &kp KP_N0 &kp KP_DOT &kp LSHFT   AS(Z) AS(X) AS(C) AS(V) AS(B)  &mt LGUI DEL              &kp LALT AS(N) AS(M) AS(COMMA) AS(DOT) AS(LBKT) AS(RBKT)  &kp F1 &kp F2 
        &kp DOWN &kp LCTRL  &kp LEFT &kp UP &kp RIGHT &kp BSPC &kp SPACE &kp LCTRL                          &mo 3 &lt 1 LEFT &lt 3 RIGHT &kp C_VOL_UP  &kp C_BRI_UP &kp C_VOL_DN  &kp LSHFT &kp C_BRI_DN 
             >;
