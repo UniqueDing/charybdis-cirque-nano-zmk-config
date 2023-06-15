@@ -163,12 +163,12 @@ modcp: mod_copy {
        default_layer {
             label = "DEFAULT";
             bindings = <
-&lt 1 ESC &kp N1 &kp N2 &kp N3 &kp N4 &kp N5           &kp N6  &kp N7  &kp N8  &kp N9  &kp N0   &lt 1  MINUS
-&lt 2 TAB    &kp Q  &kp W    &kp E   &kp R   &kp T        &kp Y  &kp U     &kp I     &kp O    &kp P    &lt 2 EQUAL
-&lt 4 CAPS  &kp A  &kp S    &kp D    &kp F     &kp G               &kp H  &kp J     &kp K     &kp L    &kp SEMI &lt 3 SQT
-&kp LSHFT &kp Z  &kp X    &kp C    &kp V     &kp B                &kp N  &kp M     &kp COMMA &kp DOT  &kp FSLH  &kp ENTER 
-&kp GRAVE  &kp LGUI  &kp SPACE &kp BSPC                    &kp UP &kp SPACE    &kp LBKT  &kp RBKT          
-&kp LALT &none	&kp LCTRL 	&kp DEL 	       &kp LEFT   &kp RIGHT &none &kp DOWN  
+&kp ESC &kp N1 &kp N2 &kp N3 &kp N4 &kp N5           &kp N6  &kp N7  &kp N8  &kp N9  &kp N0    &kp DEL
+&kp LBKT    &kp Q  &kp W    &kp E   &kp R   &kp T        &kp Y  &kp U     &kp I     &kp O    &kp P    &kp RBKT
+&kp BSPC  &kp A  &kp S    &kp D    &kp F     &kp G               &kp H  &kp J     &kp K     &kp L    &kp SEMI &lt 3 SQT
+&kp TAB  &kp Z  &kp X    &kp C    &kp V     &kp B                &kp N  &kp M     &kp COMMA &kp DOT  &kp MINUS   &kp EQUAL 
+ &kp LGUI  &kp LALT  &kp SPACE &kp ENTER                    &kp UP &kp SPACE    &mkp RCLK  &mkp LCLK     
+&kp LSHFT &none	&kp LCTRL 	&mo 1	       &kp LEFT   &kp RIGHT &none &kp FSLH  
             >;
                 trackball-bindings = <&tmv>;
         };  
