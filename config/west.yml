@@ -1,7 +1,7 @@
 manifest:
   remotes:
     - name: zmkfirmware
-      url-base: https://github.com/ALpotato
+      url-base: https://github.com/DoctorWangWang
   projects:
     - name: zmk
       remote: zmkfirmware
