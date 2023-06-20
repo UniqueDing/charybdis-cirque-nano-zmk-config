@@ -110,12 +110,12 @@ modcp: mod_copy {
             key-positions = <27 28>;
             bindings = <&mwh MWH_D>;
         };
-               combo_esc {
+               combo_LCLK {
             timeout-ms = <50>;
             key-positions = <31 32>;
             bindings = <&mkp LCLK>;
         };
-             combo_rgui {
+             combo_RCLK {
             timeout-ms = <50>;
             key-positions = <33 34>;
             bindings = <&mkp RCLK>;
