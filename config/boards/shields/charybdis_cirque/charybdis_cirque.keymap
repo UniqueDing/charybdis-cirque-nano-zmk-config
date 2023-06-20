@@ -127,8 +127,8 @@ modcp: mod_copy {
 &kp LBKT    &kp Q  &kp W    &kp E   &kp R   &kp T        &kp Y  &kp U     &kp I     &kp O    &kp P    &kp RBKT
 &kp BSPC  &kp A  &kp S    &kp D    &kp F     &kp G               &kp H  &kp J     &kp K     &kp L    &kp SEMI &lt 2 SQT
 &kp TAB  &kp Z  &kp X    &kp C    &kp V     &kp B                &kp N  &kp M     &kp COMMA &kp DOT  &kp MINUS   &kp EQUAL 
- &kp LGUI  &kp LALT  &kp SPACE &kp ENTER                    &kp UP &kp SPACE    &mkp RCLK  &mkp LCLK     
-&kp LSHFT &none	&kp LCTRL 	&mo 1	       &kp LEFT   &kp RIGHT &none &kp FSLH  
+ &kp LGUI  &kp LALT  &kp SPACE &kp ENTER                    &kp UP &kp SPACE    &kp C_AL_MY_COMPUTER  &kp LA(F4)     
+&kp LSHFT &none	 &mo 1	&kp LCTRL        &kp LEFT   &kp RIGHT &none &kp FSLH  
             >;
                 trackball-bindings = <&tmv>;
         };  
@@ -138,7 +138,7 @@ modcp: mod_copy {
             label = "NUMBER";
             bindings = <
             
-&kp GRAVE   &kp F1  &kp F2   &kp F3  &kp F4   &kp F5                &kp F6   &kp F7  &kp F8   &kp F9    &kp F10   &none
+&kp GRAVE   &kp F1  &kp F2   &kp F3  &kp F4   &kp F5                &kp F6   &kp F7  &kp F8   &kp F9    &kp F10    &kp LC(LA(DEL))
   &none	&none	&kp C_VOL_DN &kp C_VOL_UP &kp UP	&kp PG_UP          &none	 &kp LC(LS(TAB)) &kp C_PP &kp  C_NEXT	&kp  C_PREV	&kp BSLH
   &none	&kp LA(SPACE)	 &kp LG(LS(S))	&kp LEFT  &kp DOWN &kp RIGHT	        &kp HOME    &kp LC(TAB)	&none	&none	&none	&none
  &none	&none	&none	&kp CAPS 	&none	&kp PG_DN	       &kp END	&none	&none	&none	&none	&none
