@@ -102,22 +102,22 @@ modcp: mod_copy {
         compatible = "zmk,combos";
         combo_esc {
             timeout-ms = <50>;
-            key-positions = <44 45>;
+            key-positions = <25 26>;
             bindings = <&mwh MWH_U>;
         };
              combo_rgui {
             timeout-ms = <50>;
-            key-positions = <54 55>;
+            key-positions = <27 28>;
             bindings = <&mwh MWH_D>;
         };
                combo_esc {
             timeout-ms = <50>;
-            key-positions = <44 5>;
+            key-positions = <31 32>;
             bindings = <&mkp LCLK>;
         };
              combo_rgui {
             timeout-ms = <50>;
-            key-positions = <5 55>;
+            key-positions = <33 34>;
             bindings = <&mkp RCLK>;
         };
 
