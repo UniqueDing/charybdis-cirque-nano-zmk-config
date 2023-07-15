@@ -48,7 +48,7 @@ RC(3,0) RC(3,1) RC(3,2) RC(3,3) RC(3,4) RC(3,5)  RC(3,6)  RC(3,7) RC(3,8) RC(3,9
     compatible = "nordic,nrf-spim";
   status = "disabled";
     miso-pin = <17>; // P0.17
-    mosi-pin = <20>; // P0.20
+    mosi-pin = <17>; // P0.20
     sck-pin = <31>; // P0.22
     cs-gpios = <&gpio0 29 GPIO_ACTIVE_LOW>; // P0.24
 
