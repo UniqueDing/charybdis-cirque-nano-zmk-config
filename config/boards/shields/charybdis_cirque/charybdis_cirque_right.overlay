@@ -23,6 +23,6 @@
     status = "okay";
 };
 
-&trackball {
-    status = "okay";
-};
+//&trackball {
+    //status = "okay";
+//};
