@@ -1,0 +1,85 @@
+#include "charybdis.dtsi"
+
+&default_transform { // The matrix transform for this board is 5 columns over because the left half is 5 columns wide according to the matrix.
+    col-offset = <6>;
+};
+
+&kscan0 {
+        col-gpios
+            = <&pro_micro 4 GPIO_ACTIVE_HIGH>
+            , <&pro_micro 5 GPIO_ACTIVE_HIGH>
+            , <&pro_micro 6 GPIO_ACTIVE_HIGH>
+            , <&pro_micro 7 GPIO_ACTIVE_HIGH>
+            , <&pro_micro 8 GPIO_ACTIVE_HIGH>
+            , <&pro_micro 9 GPIO_ACTIVE_HIGH>
+            ;
+};
+
+&pro_micro_spi {
+    status = "okay";
+
+    miso-pin = <17>; // P0.17
+    mosi-pin = <20>; // P0.20
+    sck-pin = <31>; // P0.22
+    cs-gpios = <&gpio0 29 GPIO_ACTIVE_LOW>; // P0.24
+
+    trackball: trackball@0 {
+        status = "okay";
+        compatible = "pixart,pmw3360";
+        reg = <0>;
+        label = "Pixart PMW3360";
+        irq-gpios = <&gpio0 8 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>;
+        spi-max-frequency = <2000000>;
+        scroll-layer = <5>;
+    };
+};
+
+/*
+&nice_nano_spi {
+    status = "okay";
+};
+
+&trackpad {
+    status = "okay";
+};
+
+&pro_micro_spi {
+	compatible = "nordic,nrf-spim";
+    status = "okay";
+
+    miso-pin = <17>; // P0.17
+    mosi-pin = <20>; // P0.20
+    sck-pin = <22>; // P0.22
+    cs-gpios = <&gpio0 24 GPIO_ACTIVE_LOW>; // P0.24
+
+    trackball: trackball@0 {
+        compatible = "pixart,pmw33xx";
+        reg = <0>;
+        label = "Pixart PMW3360";
+        cs-gpios = <&gpio0 24 GPIO_ACTIVE_LOW>; // P0.24
+        motswk-gpios = <&gpio1 0 GPIO_ACTIVE_LOW>; // P1.00 = 32 + 0
+        spi-max-frequency = <10000000>;
+        cpi = <600>;
+    };
+};
+
+&pro_micro_spi {
+    compatible = "nordic,nrf-spim";
+    status = "okay";
+    miso-pin = <17>; // P0.17
+    mosi-pin = <20>; // P0.20
+    sck-pin = <22>; // P0.22
+    cs-gpios = <&gpio0 24 GPIO_ACTIVE_LOW>; // P0.24
+
+    trackpad: trackpad@0 {
+        compatible = "cirque,pinnacle";
+        reg = <0>;
+        label = "cirque trackpad";
+        spi-max-frequency = <1000000>;
+        dr-gpios = <&gpio1 0 GPIO_ACTIVE_HIGH>;
+        // invert-x;
+        sleep;
+        // no-taps;
+    };
+};
+*/

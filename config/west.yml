@@ -5,7 +5,7 @@ manifest:
   projects:
     - name: zmk
       remote: zmkfirmware
-      revision: ptdevice-alpotato
+      revision: alpotato-pmw3360
       import: app/west.yml
   self:
     path: config
