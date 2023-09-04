@@ -162,6 +162,7 @@ modcp: mod_copy {
             label = "DEFAULT";
             bindings = <
    &lt 3 ESC AS(Q) AS(W) AS(E) AS(R) AS(T)           AS(Y) AS(U) AS(I)     AS(O)   AS(P)  AS(MINUS) 
+   &lt 3 ESC AS(Q) AS(W) AS(E) AS(R) AS(T)           AS(Y) AS(U) AS(I)     AS(O)   AS(P)  AS(MINUS) 
    &kp ENTER AS(A) AS(S) AS(D) AS(F) AS(G)     AS(H) AS(J) AS(K)     AS(L)  AS(SEMI)    AS(SQT) 
    &kp CAPS  AS(Z) AS(X) AS(C) AS(V) AS(B)                 AS(N) AS(M) AS(COMMA) AS(DOT) AS(FSLH)   AS(BSLH) 
  &kp LC(C) &kp LC(V) &kp BSPC &kp SPACE     &lt 2 LEFT  &lt 1 RIGHT    AS(LBKT)   AS(RBKT)      
@@ -169,58 +170,5 @@ modcp: mod_copy {
             >;
                 trackball-bindings = <&tmv>;
         };  
-
-
-          number_layer {
-            label = "NUMBER";
-            bindings = <
-   &kp TAB  &kp PLUS AS(N7) AS(N8)  AS(N9)   &kp KP_SLASH    &kp F12 &kp F7 &kp F8 &kp F9 &kp F10 &kp F11
-    &kp ENTER   &kp MINUS  AS(N4) AS(N5)   AS(N6)  &kp KP_DOT        &macro_email_q    &kp F4 &kp F5 &kp F6    &none &none
-   &kp ENTER &kp KP_MULTIPLY  AS(N1) AS(N2) AS(N3) AS(N0)          &macro_phone  &kp F1 &kp F2 &kp F3 &none &none
-  &kp LC(C) &mt  LALT LC(V)  &kp BSPC  &kp SPACE                                 &kp LEFT &kp RIGHT &none &none
-     &trans    &to 0 &to 0   &trans                                             &kp UP &kp DOWN &none &none
-            >;
-               trackball-bindings = <&tsl>;    
-        };
-
-        symbol_layer {
-            label = "SYMBOL";
-            bindings = <
- &kp C_VOL_UP  &kp C_VOL_DN  &kp AMPS  &kp STAR &kp LPAR  &kp RPAR       &none &none &kp UP &none &none &none 
-&kp C_BRI_UP &kp C_BRI_DN &kp DLLR   &kp PRCNT   &kp CARET &kp UNDER     &none &kp LEFT &kp DOWN &kp RIGHT  &none &none 
- &none  &kp GRAVE &kp EXCL  &kp AT   &kp HASH &kp EQUAL     &none &none &none &none  &none &none
- &none &none &kp C_RW &kp C_FF                                      &none &none &none &none 
- &none &none &kp LSHFT  &none                                   &none &none &none &none                                                                                           
-         >;
-                   trackball-bindings = <&tmv_fine>;
-        };
-
-
-        hotkey_layer {
-            label = "HOTKEY";
-            bindings = <
- &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4 &bt BT_CLR            &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4 &bt BT_CLR
-&none	&none	&none	&none	&none	&out OUT_USB	&out OUT_USB	&none	&none	&none	&none	&none
-&none	&none	&none	&none	&none	&out OUT_BLE	&out OUT_BLE	&none	&none	&none	&none	&none
-   &none &none &none &none                                                              &none &none &none &none
-   &none &none &none &none                                                              &none &none &none &none                                                     
-            >;
-                 trackball-bindings = <&tmv_x>;
-        };
-        
-            mouse_layer {
-            label = "MSE";
-            bindings = <
- &none &none  &none       &mmv MMV_U  &none       &none       &none  &none       &mwh MWH_U  &none       &none  &none
-            &none     &none  &mmv MMV_L  &mmv MMV_D  &mmv MMV_R  &none       &none  &mwh MWH_L  &mwh MWH_D  &mwh MWH_R  &none  &none
-&none &none &mkp LCLK &mkp MCLK &mkp RCLK &none                                            &none &none &none &none &none &none
-   &none &none &none &none                                                              &none &none &none &none
-   &none &none &none &none                                                              &none &none &none &none                                                     
-            >;
-                trackball-bindings = <&tmv_x>;
-        };
-        
-        
-        
    };
 };
