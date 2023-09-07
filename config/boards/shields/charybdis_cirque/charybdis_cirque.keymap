@@ -34,7 +34,6 @@
 
 #define AS(keycode) &as LS(keycode) keycode
 
-
 / {
         behaviors {
         td0: tap_dance_0 {
@@ -97,7 +96,63 @@ modcp: mod_copy {
        
     };
     
-
+     combos {
+        compatible = "zmk,combos";
+        combo_esc {
+            timeout-ms = <50>;
+            key-positions = <2 38>;
+            bindings = <&kp TAB>;
+        };
+             combo_rgui {
+            timeout-ms = <50>;
+            key-positions = <3 38>;
+            bindings = <&kp CAPS>;
+        };
+        
+         combo_LSHFT {
+            timeout-ms = <50>;
+            key-positions = <14 38>;
+            bindings = <&kp  LSHFT>;
+        };
+       
+         combo_2 {
+            timeout-ms = <50>;
+            key-positions = <15 38>;
+            bindings = <&kp N2 >;
+        };
+         combo_3 {
+            timeout-ms = <50>;
+            key-positions = <16 38>;
+            bindings = <&kp N3>;
+        };
+            combo_LGUI {
+            timeout-ms = <50>;
+            key-positions = <26 38>;
+            bindings = <&kp LGUI>;
+        };
+              combo_GUI {
+            timeout-ms = <50>;
+            key-positions = <27 38>;
+            bindings = <&tog 1>;
+        };
+                  combo_G {
+            timeout-ms = <50>;
+            key-positions = <14 39>;
+            bindings = <&mo 4>;
+        };
+                  combo_GU {
+            timeout-ms = <50>;
+            key-positions = <14 39>;
+            bindings = <&mo 2>;
+        };
+                      combo_m {
+            timeout-ms = <50>;
+            key-positions = <21 41>;
+            bindings = <&mo 4>;
+        };
+        
+  
+   };
 
 
 
@@ -106,64 +161,68 @@ modcp: mod_copy {
        default_layer {
             label = "DEFAULT";
             bindings = <
-AS(GRAVE)    AS(N1)   AS(N2)   AS(N3)  AS(N4)  AS(N5)         AS(N6)  AS(N7)    AS(N8)   AS(N9)   AS(N0)    AS(MINUS) 
-&lt 3 TAB    AS(Q)   AS(W)     AS(E)   AS(R)   AS(T)           AS(Y)   AS(U)     AS(I)   AS(O)   AS(P)    AS(EQUAL)
-&lt 3 LCTRL  AS(A)   AS(S)     AS(D)   AS(F)   AS(G)           AS(H)   AS(J)     AS(K)   AS(L)   AS(SEMI)  AS(SQT)
-&kp LSHFT    AS(Z)   AS(X)     AS(C)   AS(V)   AS(B)          AS(N)   AS(M)     AS(COMMA) AS(DOT) AS(FSLH) AS(BSLH) 
-&kp ESC   &kp LGUI  &lt 1 SPACE   &kp BSPC                    &kp UP     &kp ENTER    AS(LBKT)  AS(RBKT)          
-&kp LALT  &none	   &kp LCTRL 	&kp DEL 	              &kp LEFT   &kp RIGHT    &none     &kp DOWN    
+   &lt 3 ESC AS(Q) AS(W) AS(E) AS(R) AS(T)           AS(Y) AS(U) AS(I)     AS(O)   AS(P)  AS(MINUS) 
+   &lt 3 ESC AS(Q) AS(W) AS(E) AS(R) AS(T)           AS(Y) AS(U) AS(I)     AS(O)   AS(P)  AS(MINUS) 
+   &kp ENTER AS(A) AS(S) AS(D) AS(F) AS(G)     AS(H) AS(J) AS(K)     AS(L)  AS(SEMI)    AS(SQT) 
+   &kp CAPS  AS(Z) AS(X) AS(C) AS(V) AS(B)                 AS(N) AS(M) AS(COMMA) AS(DOT) AS(FSLH)   AS(BSLH) 
+ &kp LC(C) &kp LC(V) &kp BSPC &kp SPACE     &lt 2 LEFT  &lt 1 RIGHT    AS(LBKT)   AS(RBKT)      
+ &kp LALT  &kp LALT &mt LCTRL  LSHFT  &lt 1  DEL     &kp LGUI   AS(EQUAL)   &mo 3   &mo 3        
             >;
+                trackball-bindings = <&tmv>;
         };  
 
 
           number_layer {
             label = "NUMBER";
             bindings = <
-&trans   &none     &kp F10    &kp PG_UP  &kp F12    &none       &none  &none       &kp KP_SLASH &kp KP_MULTIPLY   &kp KP_MINUS &none
-&trans   &none     &kp HOME   &kp UP     &kp END    &kp PG_UP   &none  &kp KP_N7   &mmv MMV_U   &kp KP_N9         &kp KP_PLUS  &none 
-&trans    &kp LC(A)  &kp LEFT   &kp DOWN   &kp RIGHT  &kp PG_DN   &none  &mmv MMV_L  &mmv MMV_D   &mmv MMV_R        &kp ENTER    &kp BSLH
-&trans   &kp LC(Z) &kp LC(X)  &kp LC(C)  &kp LC(V)  &kp LC(D)   &none  &mkp LCLK   &mkp MCLK    &mkp RCLK         &kp ENTER    &kp ENTER 
-&trans   &trans    &trans     &trans                            &none  &none	   &kp KP_N0    &kp KP_DOT	
-&trans   &none     &trans     &trans                            &trans &trans      &none        &trans     
+   &kp TAB  &kp PLUS AS(N7) AS(N8)  AS(N9)   &kp KP_SLASH    &kp F12 &kp F7 &kp F8 &kp F9 &kp F10 &kp F11
+   &kp TAB  &kp PLUS AS(N7) AS(N8)  AS(N9)   &kp KP_SLASH    &kp F12 &kp F7 &kp F8 &kp F9 &kp F10 &kp F11
+    &kp ENTER   &kp MINUS  AS(N4) AS(N5)   AS(N6)  &kp KP_DOT        &macro_email_q    &kp F4 &kp F5 &kp F6    &none &none
+   &kp ENTER &kp KP_MULTIPLY  AS(N1) AS(N2) AS(N3) AS(N0)          &macro_phone  &kp F1 &kp F2 &kp F3 &none &none
+  &kp LC(C) &mt  LALT LC(V)  &kp BSPC  &kp SPACE                                 &kp LEFT &kp RIGHT &none &none
+     &trans    &to 0 &to 0   &trans                                             &kp UP &kp DOWN &none &none
             >;
+               trackball-bindings = <&tsl>;    
         };
 
         symbol_layer {
             label = "SYMBOL";
             bindings = <
-                &none &none &none &none   &none &none &none &none   &none &none &none &none 
- &none &none  &none       &mmv MMV_U  &none       &none       &none  &none       &mwh MWH_U  &none       &none  &none
-            &none     &none  &mmv MMV_L  &mmv MMV_D  &mmv MMV_R  &none       &none  &mwh MWH_L  &mwh MWH_D  &mwh MWH_R  &none  &none
-&none &none &mkp LCLK &mkp MCLK &mkp RCLK &none                                            &none &none &none &none &none &none
-   &none &none &none &none                                                              &none &none &none &none
-   &none &none &none &none                                                              &none &none &none &none                                                                                            
+ &kp C_VOL_UP  &kp C_VOL_DN  &kp AMPS  &kp STAR &kp LPAR  &kp RPAR       &none &none &kp UP &none &none &none 
+ &kp C_VOL_UP  &kp C_VOL_DN  &kp AMPS  &kp STAR &kp LPAR  &kp RPAR       &none &none &kp UP &none &none &none 
+&kp C_BRI_UP &kp C_BRI_DN &kp DLLR   &kp PRCNT   &kp CARET &kp UNDER     &none &kp LEFT &kp DOWN &kp RIGHT  &none &none 
+ &none  &kp GRAVE &kp EXCL  &kp AT   &kp HASH &kp EQUAL     &none &none &none &none  &none &none
+ &none &none &kp C_RW &kp C_FF                                      &none &none &none &none 
+ &none &none &kp LSHFT  &none                                   &none &none &none &none                                                                                           
          >;
+                   trackball-bindings = <&tmv_fine>;
         };
 
 
         hotkey_layer {
             label = "HOTKEY";
             bindings = <
+&none	&none	&none	&none	&none	&out OUT_USB	&out OUT_USB	&none	&none	&none	&none	&none
  &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4 &bt BT_CLR            &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4 &bt BT_CLR
 &none	&none	&none	&none	&none	&out OUT_USB	&out OUT_USB	&none	&none	&none	&none	&none
 &none	&none	&none	&none	&none	&out OUT_BLE	&out OUT_BLE	&none	&none	&none	&none	&none
-  &none &none &none &none   &none &none &none &none   &none &none &none &none 
    &none &none &none &none                                                              &none &none &none &none
    &none &none &none &none                                                              &none &none &none &none                                                     
             >;
+                 trackball-bindings = <&tmv_x>;
         };
         
             mouse_layer {
             label = "MSE";
             bindings = <
-            
-              &none &none &none &none   &none &none &none &none   &none &none &none &none 
+ &none &none  &none       &mmv MMV_U  &none       &none       &none  &none       &mwh MWH_U  &none       &none  &none
  &none &none  &none       &mmv MMV_U  &none       &none       &none  &none       &mwh MWH_U  &none       &none  &none
             &none     &none  &mmv MMV_L  &mmv MMV_D  &mmv MMV_R  &none       &none  &mwh MWH_L  &mwh MWH_D  &mwh MWH_R  &none  &none
 &none &none &mkp LCLK &mkp MCLK &mkp RCLK &none                                            &none &none &none &none &none &none
    &none &none &none &none                                                              &none &none &none &none
    &none &none &none &none                                                              &none &none &none &none                                                     
             >;
+                trackball-bindings = <&tmv_x>;
         };
         
         
