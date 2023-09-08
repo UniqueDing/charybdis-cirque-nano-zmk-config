@@ -68,7 +68,7 @@
 
     macros {
         macro_phone: macro_phone {
-            # 1351
+            // 1351
             label = "MACRO_PHONE";
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -77,7 +77,7 @@
                 ;
         };
         macro_email_q: macro_email_q {
-            # 2894512440@qq.com
+            // 2894512440@qq.com
             label = "MACRO_EMAIL_QQ";
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -87,7 +87,7 @@
                 ;
         };
         macro_email_g: macro_email_g {
-            # 135115
+            // 135115
             compatible = "zmk,behavior-macro";
             label = "MACRO_EMAIL_GMAIL";
             #binding-cells = <0>;
