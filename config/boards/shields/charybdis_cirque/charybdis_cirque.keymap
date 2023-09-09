@@ -161,12 +161,12 @@
        default_layer {
             label = "DEFAULT";
             bindings = <
-   &kp GRAVE &kp N1 &kp N2 &kp N3 &kp N4 &kp N5                &kp N6 &kp N7 &kp N8 &kp N9 &kp N0  &kp BSPC
-   &kp Tab &kp Q &kp W &kp E &kp R &kp T                  &kp Y &kp U &kp I &kp O &kp P  &kp BSLH
-   &kp CAPS &kp A &kp S &kp D &kp F &kp G                 &kp H &kp J &kp K     &kp L  &kp SEMI    &kp SQT
-   &kp LSHIFT &kp Z &kp X &kp C &kp V &kp B               &kp N &kp M &kp COMMA &kp DOT &kp FSLH   &kp BSLH
-   &kp LC(C) &kp LC(V) &kp LGUI &kp SPACE                 &lt 2 LEFT  &lt 1 RIGHT    AS(LBKT)   AS(RBKT)
-   &kp LALT  &kp LALT &mt LCTRL  LSHFT  &lt 1 DEL                   AS(EQUAL)   &mo 3   &mo 3
+   &kp GRAVE    &kp N1     &kp N2     &kp N3     &kp N4     &kp N5         &kp N6     &kp N7     &kp N8     &kp N9     &kp N0     &kp BSPC
+   &kp Tab      &kp Q      &kp W      &kp E      &kp R      &kp T          &kp Y      &kp U      &kp I      &kp O      &kp P      &kp BSLH
+   &kp CAPS     &kp A      &kp S      &kp D      &kp F      &kp G          &kp H      &kp J      &kp K      &kp L      &kp SEMI   &kp SQT
+   &kp LSHIFT   &kp Z      &kp X      &kp C      &kp V      &kp B          &kp N      &kp M      &kp COMMA  &kp DOT    &kp FSLH   &kp BSLH
+                           &kp LC(C)  &kp LC(V)  &kp LGUI   &kp SPACE                 &lt 2 LEFT &lt 1 RIGHT AS(LBKT)  AS(RBKT)
+                           &kp LALT   &kp LALT   &mt LCTRL  &bootloader               AS(EQUAL)  &bootloader &mo 3
  //  &lt 3 ESC AS(Q) AS(W) AS(E) AS(R) AS(T)           AS(Y) AS(U) AS(I)     AS(O)   AS(P)  AS(MINUS)
  //  &lt 3 ESC AS(Q) AS(W) AS(E) AS(R) AS(T)           AS(Y) AS(U) AS(I)     AS(O)   AS(P)  AS(MINUS)
  //  &kp ENTER AS(A) AS(S) AS(D) AS(F) AS(G)     AS(H) AS(J) AS(K)     AS(L)  AS(SEMI)    AS(SQT)
