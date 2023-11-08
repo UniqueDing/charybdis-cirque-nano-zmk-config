@@ -1,7 +1,7 @@
 if SHIELD_CHARYBDIS_CIRQUE_RIGHT
 
     config ZMK_KEYBOARD_NAME
-        default "Blade"
+        default "Uniqueding-kb-5x7"
 
     config ZMK_SPLIT_BLE_ROLE_CENTRAL
         default y
@@ -11,7 +11,7 @@ endif
 if SHIELD_CHARYBDIS_CIRQUE_LEFT
 
     config ZMK_KEYBOARD_NAME
-        default "Blade-slave"
+        default "Uniqueding-kb-5x7-slave"
 
 endif
 
